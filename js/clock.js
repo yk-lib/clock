@@ -80,6 +80,8 @@ function updateSoundUI() {
 
     if (soundEnabled) {
         enableSound.textContent = "Sound:OFF";
+    }
+    else {
         enableSound.textContent = "Sound:ON";
     }
 
