@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- CSSファイル読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScriptファイル読み込み -->
+    <script src="js/clock.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <p class="clock-time"></p>
+            <p class="clock-date"></p>
+            <p class="clock-day"></p>
+        </div>
+        <div class="pigeon"></div>
+        <div class="settings">
+            <div class="sound-switch">
+                <button id="enableSound">Sound:ON</button>
+            </div>
+            <!-- 音声要素 -->
+            <audio id="audio" src="assets/audio/鳩時計2.mp3" preload="auto"></audio>
+
+            <!-- 音量スライダー -->
+            <div class="volume">
+                <span id="volume-icon">🔇</span><br>
+                <input type="range" id="volume-slider" min="0" max="100" value="0">
+                <p id="volume-slider-result">0%</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
