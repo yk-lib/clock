@@ -100,7 +100,7 @@ enableSound.addEventListener("click", () => {
 
 volumeSlider.addEventListener("input", () => {   
     updateSoundUI();
-})
+});
 
 // スライダーの装飾
 document.addEventListener('DOMContentLoaded', () => {
