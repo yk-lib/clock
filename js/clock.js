@@ -39,7 +39,7 @@ function playTone(frequency, duration) {
 
 // 休符
 function rest(duration) {
-    return new Promise(resolve => setTimeout(resolve, duration))
+    return new Promise(resolve => setTimeout(resolve, duration));
 }
 
 async function play() {
